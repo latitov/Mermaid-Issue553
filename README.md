@@ -40,7 +40,7 @@ It won't show diagrams for people visiting the page, who don't have that plugin 
 
 ## This page, as seen when the plugin is installed
 
-![pic1](pic1.png)
+![](mermaid-diagram-20201229132446.png)
 
 ## Example
 
