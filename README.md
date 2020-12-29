@@ -40,7 +40,7 @@ It won't show diagrams for people visiting the page, who don't have that plugin 
 
 ## This page, as seen when the plugin is installed
 
-![](1.svg)
+![](mermaid-diagram-20201229132824.svg)
 
 ## Example
 
