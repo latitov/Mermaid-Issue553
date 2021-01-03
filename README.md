@@ -8,7 +8,7 @@ graph LR
    C -->D
 ```
 
-Go to [mermaidoc.html](mermaidoc.html), both by this link, and to its source code.
+Please look at the [web page of this](https://latitov.github.io/Mermaid-Issue553/). Go to `mermaidoc.html`, both by the link above, and to its source code.
 
 Also, [Mermaid Online Editor](https://mermaid-js.github.io/mermaid-live-editor/#/edit/)
 
