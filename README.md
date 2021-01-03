@@ -8,9 +8,16 @@ graph LR
    C -->D
 ```
 
-Please look at the [web page of this](https://latitov.github.io/Mermaid-Issue553/). Go to [mermaidoc.html](mermaidoc.html), both by the link above, and to its source code.
+## Please look at the [web page of this](https://latitov.github.io/Mermaid-Issue553/). Go to [mermaidoc.html](mermaidoc.html), both by the link above, and to its source code.
 
-Also, [Mermaid Online Editor](https://mermaid-js.github.io/mermaid-live-editor/#/edit/)
+## Also, [Mermaid Online Editor](https://mermaid-js.github.io/mermaid-live-editor/#/edit/)
+
+![](mermaid-diagram-20201229132824.svg)
+
+----
+
+__(The below is outdated, maybe not)__
+
 
 ## Problem Context
 
@@ -44,5 +51,4 @@ It won't show diagrams for people visiting the page, who don't have that plugin 
 
 ## This page, as seen when the plugin is installed
 
-![](mermaid-diagram-20201229132824.svg)
 
