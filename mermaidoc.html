@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.css" integrity="sha512-j84w/URwwK++Im1eDnefcHbtMSYWbwaLmJqcj58tDiZtjfPFPHEzxcnyOpqfGhTgxd/6xL2J9rmF987W64S8Tw==" crossorigin="anonymous" />
 </head>
 <body>
+
 <div id="mydoc-src" style="display: none;">LlNnlljn77fggggkk77csJJK8bbJBKJBkjjjjbbbJJLJLLJo<!--
 
 # Examples
@@ -14,33 +15,51 @@ Look into the source code for a reference.
 
 ## Examples
 
+### Example
 ```
 graph LR
       A --- B --- c
-      B-->C[fa:fa-ban forbidden]
-      B-->D(fa:fa-spinner)
+      B--&gt;C[fa:fa-ban forbidden]
+      B--&gt;D(fa:fa-spinner)
 ```
-
-```mermaid
+<div class="mermaid">
 graph LR
       A --- B --- c
-      B-->C[fa:fa-ban forbidden]
-      B-->D(fa:fa-spinner)
-```
+      B--&gt;C[fa:fa-ban forbidden]
+      B--&gt;D(fa:fa-spinner)
+</div>
 
+
+### Example
 ```
 graph TD
-     A[Client] --> B[Load Balancer]
-     B --> C[Server1]
-     B --> D[Server2]
+	A[Client] --&gt; B[Load Balancer]
+	B --&gt; C[Server01]
+	B --&gt; D[Server02]
 ```
-```mermaid
+<div class="mermaid">
 graph TD
-     A[Client] --> B[Load Balancer]
-     B --> C[Server1]
-     B --> D[Server2]
+	A[Client] --&gt; B[Load Balancer]
+	B --&gt; C[Server01]
+	B --&gt; D[Server02]
+</div>
+
+
+### Example
 ```
+graph TD
+     A[Client] --&gt; B[Load Balancer]
+     B --&gt; C[Server1]
+     B --&gt; D[Server2]
+```
+<div class="mermaid">
+graph TD
+     A[Client] --&gt; B[Load Balancer]
+     B --&gt; C[Server1]
+     B --&gt; D[Server2]
+</div>
   
+### Example
 ```
 classDiagram
     Animal <|-- Duck
@@ -64,8 +83,7 @@ classDiagram
       +run()
     }   
 ```
-
-```mermaid
+<div class="mermaid">
 classDiagram
     Animal <|-- Duck
     Animal <|-- Fish
@@ -87,45 +105,50 @@ classDiagram
       +bool is_wild
       +run()
     }   
-```
+</div>
 
+### Example
 ```
-graph LR
-   A --> B
-   A -->C
-   C -->D
+graph TD
+    A[Christmas] --&gt;|Get money| B(Go shopping)
+    B --&gt; C{Let me think}
+    C --&gt;|One| D[Laptop]
+    C --&gt;|Two| E[iPhone]
+    C --&gt;|Three| F[fa:fa-car Car]
 ```
+<div class="mermaid">
+graph TD
+    A[Christmas] --&gt;|Get money| B(Go shopping)
+    B --&gt; C{Let me think}
+    C --&gt;|One| D[Laptop]
+    C --&gt;|Two| E[iPhone]
+    C --&gt;|Three| F[fa:fa-car Car]
+</div>
 
-```mermaid
-graph LR
-   A --> B
-   A -->C
-   C -->D
-```
-
+### Example
 ```
 erDiagram
-          CUSTOMER }|..|{ DELIVERY-ADDRESS : has
-          CUSTOMER ||--o{ ORDER : places
-          CUSTOMER ||--o{ INVOICE : "liable for"
-          DELIVERY-ADDRESS ||--o{ ORDER : receives
-          INVOICE ||--|{ ORDER : covers
-          ORDER ||--|{ ORDER-ITEM : includes
-          PRODUCT-CATEGORY ||--|{ PRODUCT : contains
-          PRODUCT ||--o{ ORDER-ITEM : "ordered in"
+  CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+  CUSTOMER ||--o{ ORDER : places
+  CUSTOMER ||--o{ INVOICE : "liable for"
+  DELIVERY-ADDRESS ||--o{ ORDER : receives
+  INVOICE ||--|{ ORDER : covers
+  ORDER ||--|{ ORDER-ITEM : includes
+  PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+  PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
-
-```mermaid
+<div class="mermaid">
 erDiagram
-          CUSTOMER }|..|{ DELIVERY-ADDRESS : has
-          CUSTOMER ||--o{ ORDER : places
-          CUSTOMER ||--o{ INVOICE : "liable for"
-          DELIVERY-ADDRESS ||--o{ ORDER : receives
-          INVOICE ||--|{ ORDER : covers
-          ORDER ||--|{ ORDER-ITEM : includes
-          PRODUCT-CATEGORY ||--|{ PRODUCT : contains
-          PRODUCT ||--o{ ORDER-ITEM : "ordered in"
-```
+  CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+  CUSTOMER ||--o{ ORDER : places
+  CUSTOMER ||--o{ INVOICE : "liable for"
+  DELIVERY-ADDRESS ||--o{ ORDER : receives
+  INVOICE ||--|{ ORDER : covers
+  ORDER ||--|{ ORDER-ITEM : includes
+  PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+  PRODUCT ||--o{ ORDER-ITEM : "ordered in"
+</div>
+
   
 -->LlNnlljn77fggggkk77csJJK8bbJBKJBkjjjjbbbJJLJLLJo
 </div>
@@ -144,7 +167,8 @@ erDiagram
 	src.innerHTML = '';
 </script>
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script>mermaid.initialize({startOnLoad:true});</script>
+
 </body>
 </html>
