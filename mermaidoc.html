@@ -1,10 +1,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.css" integrity="sha512-j84w/URwwK++Im1eDnefcHbtMSYWbwaLmJqcj58tDiZtjfPFPHEzxcnyOpqfGhTgxd/6xL2J9rmF987W64S8Tw==" crossorigin="anonymous" />
 </head>
 <body>
-  <div class="mermaid">
-  </div>
+<div id="mydoc-src" style="display: none;">LlNnlljn77fggggkk77csJJK8bbJBKJBkjjjjbbbJJLJLLJo<!--
+
+# Examples
+
+This is the combination of Mermaid and Markdown Showdown implementation.
+
+Look into the source code for a reference.
 
 ## Examples
 
@@ -63,8 +69,22 @@ erDiagram
           PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
   
-  
-  
+-->LlNnlljn77fggggkk77csJJK8bbJBKJBkjjjjbbbJJLJLLJo
+</div>
+
+<div class="markdown-body" id="mydoc-res" style="max-width: 900px;">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+<script>
+	var converter = new showdown.Converter();
+	converter.setOption('simplifiedAutoLink', true);
+	converter.setOption('tables', true);
+	converter.setOption('tasklists', true);
+	var src = document.getElementById("mydoc-src");
+	var res = document.getElementById("mydoc-res");
+	res.innerHTML = converter.makeHtml(src.innerHTML)
+			.replace(/<p>.{0,10}LlNnlljn77fggggkk77csJJK8bbJBKJBkjjjjbbbJJLJLLJo.{0,10}<\/p>/g, "");
+	src.innerHTML = '';
+</script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js"></script>
   <script>mermaid.initialize({startOnLoad:true});</script>
