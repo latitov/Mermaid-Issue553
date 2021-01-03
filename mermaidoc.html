@@ -14,7 +14,7 @@ Look into the source code for a reference.
 
 ## Examples
 
-```mermaid
+```
 graph LR
       A --- B --- c
       B-->C[fa:fa-ban forbidden]
@@ -22,12 +22,49 @@ graph LR
 ```
 
 ```mermaid
+graph LR
+      A --- B --- c
+      B-->C[fa:fa-ban forbidden]
+      B-->D(fa:fa-spinner)
+```
+
+```
+graph TD
+     A[Client] --> B[Load Balancer]
+     B --> C[Server1]
+     B --> D[Server2]
+```
+```mermaid
 graph TD
      A[Client] --> B[Load Balancer]
      B --> C[Server1]
      B --> D[Server2]
 ```
   
+```
+classDiagram
+    Animal <|-- Duck
+    Animal <|-- Fish
+    Animal <|-- Zebra
+    Animal : +int age
+    Animal : +String gender
+    Animal: +isMammal()
+    Animal: +mate()
+    class Duck{
+      +String beakColor
+      +swim()
+      +quack()
+    }
+    class Fish{
+      -int sizeInFeet
+      -canEat()
+    }
+    class Zebra{
+      +bool is_wild
+      +run()
+    }   
+```
+
 ```mermaid
 classDiagram
     Animal <|-- Duck
@@ -51,12 +88,31 @@ classDiagram
       +run()
     }   
 ```
-	
+
+```
+graph LR
+   A --> B
+   A -->C
+   C -->D
+```
+
 ```mermaid
 graph LR
    A --> B
    A -->C
    C -->D
+```
+
+```
+erDiagram
+          CUSTOMER }|..|{ DELIVERY-ADDRESS : has
+          CUSTOMER ||--o{ ORDER : places
+          CUSTOMER ||--o{ INVOICE : "liable for"
+          DELIVERY-ADDRESS ||--o{ ORDER : receives
+          INVOICE ||--|{ ORDER : covers
+          ORDER ||--|{ ORDER-ITEM : includes
+          PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+          PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
 
 ```mermaid
