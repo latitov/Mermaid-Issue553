@@ -20,7 +20,15 @@ Look into the source code for a reference.
 graph LR
       A --- B --- c
       B--&gt;C[fa:fa-ban forbidden]
-      B--&gt;D(fa:fa-spinner)
+      B--&gt;D(fa:fa-spinner allowed)
+      D --- X1
+      D --- X2
+      D --- X3
+      D --- X4
+      X3 --- U23
+      U23 --- T501
+      X4 --&gt; T501
+      T501 --&gt; c
 ```
 <div class="mermaid">
 graph LR
@@ -33,7 +41,8 @@ graph LR
       D --- X4
       X3 --- U23
       U23 --- T501
-      X4 --- T501
+      X4 --&gt; T501
+      T501 --&gt; c
 </div>
 
 
