@@ -8,6 +8,8 @@ graph LR
    C -->D
 ```
 
+Go to [mermaidoc.html](mermaidoc.html)
+
 ## Problem Context
 
 People asked for almost a decade for support of Mermaid syntax in the GitHub. Unfortunatelly, these beareucrats ignored the Issue 553 request, and then closed it with no comment. Despite all they needed to do, was to add less than 10 lines of code.
@@ -41,52 +43,4 @@ It won't show diagrams for people visiting the page, who don't have that plugin 
 ## This page, as seen when the plugin is installed
 
 ![](mermaid-diagram-20201229132824.svg)
-
-## Example
-
-```mermaid
-classDiagram
-    Animal <|-- Duck
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-      +String beakColor
-      +swim()
-      +quack()
-    }
-    class Fish{
-      -int sizeInFeet
-      -canEat()
-    }
-    class Zebra{
-      +bool is_wild
-      +run()
-    }
-    
-```
-```mermaid
-graph LR
-   A --> B
-   A -->C
-   C -->D
-```
-
-```mermaid
-erDiagram
-          CUSTOMER }|..|{ DELIVERY-ADDRESS : has
-          CUSTOMER ||--o{ ORDER : places
-          CUSTOMER ||--o{ INVOICE : "liable for"
-          DELIVERY-ADDRESS ||--o{ ORDER : receives
-          INVOICE ||--|{ ORDER : covers
-          ORDER ||--|{ ORDER-ITEM : includes
-          PRODUCT-CATEGORY ||--|{ PRODUCT : contains
-          PRODUCT ||--o{ ORDER-ITEM : "ordered in"
-```
-
-
-![pic2](pic2.png)
 
