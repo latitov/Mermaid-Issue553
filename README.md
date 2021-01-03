@@ -8,7 +8,9 @@ graph LR
    C -->D
 ```
 
-Go to [mermaidoc.html](mermaidoc.html)
+Go to [mermaidoc.html](mermaidoc.html), both by this link, and to its source code.
+
+Also, [Mermaid Online Editor](https://mermaid-js.github.io/mermaid-live-editor/#/edit/)
 
 ## Problem Context
 
