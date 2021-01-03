@@ -16,10 +16,12 @@ Look into the source code for a reference.
 
 ```mermaid
 graph LR
-      A --- B
+      A --- B --- c
       B-->C[fa:fa-ban forbidden]
-      B-->D(fa:fa-spinner);
+      B-->D(fa:fa-spinner)
+```
 
+```mermaid
 graph TD
      A[Client] --> B[Load Balancer]
      B --> C[Server1]
@@ -47,9 +49,9 @@ classDiagram
     class Zebra{
       +bool is_wild
       +run()
-    }
-    
+    }   
 ```
+	
 ```mermaid
 graph LR
    A --> B
